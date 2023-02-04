@@ -16,7 +16,7 @@ with st.form("my_form"):
    slider_val = st.slider("Form slider")
    slider2_val = st.slider("Form slider2")
    checkbox_val = st.checkbox("Form checkbox")
-   st.text_input(
+   text_val= st.text_input(
       "Placeholder for the other text input widget",
       "This is a placeholder",
       key="placeholder",
