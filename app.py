@@ -21,6 +21,11 @@ with st.form("my_form"):
       "This is a placeholder",
       key="placeholder",
    )
+   ethnicity = st.selectbox(
+      'How would you like to be contacted?',
+      ('Email', 'Home phone', 'Mobile phone'))
+
+   st.write('You selected:', option)
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
