@@ -16,11 +16,11 @@ with st.form("my_form"):
    #slider_val = st.slider("Form slider")
    #slider2_val = st.slider("Form slider2")
    #checkbox_val = st.checkbox("Form checkbox")
-   text_val= st.text_input(
-      "Placeholder for the other text input widget",
-      "This is a placeholder",
-      key="placeholder",
-   )
+   #text_val= st.text_input(
+   #   "Placeholder for the other text input widget",
+    #  "This is a placeholder",
+   #   key="placeholder",
+   #)
    #RACE
    race = st.selectbox(
       'How would you like to be contacted?',
