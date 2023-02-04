@@ -23,3 +23,7 @@ with st.form("my_form"):
 
 st.write("Outside the form")
 
+title = st.text_input('Movie title', 'Life of Brian')
+st.write('The current movie title is', title)
+
+
