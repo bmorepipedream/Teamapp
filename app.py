@@ -49,7 +49,7 @@ with st.form("my_form"):
 
    age_val= st.text_input(
       "Age",
-     "Age",
+      #"Age",
       key="age",)
 
    expericence_val = st.text_input(
@@ -59,19 +59,19 @@ with st.form("my_form"):
 
    years_val = st.text_input(
       "Years at company",
-      "This is a placeholder",
+      #"This is a placeholder",
       key="years",)
 
    job_title = st.selectbox(
-      'How would you like to be contacted?',
+      'Job Title',
       ('Software Engineer', 'Product Manager', 'Data Scientist', 'Hardware Engineer',
       'Product Designer'))
-   st.write('You selected:', job_title)
+   #st.write('You selected:', job_title)
 
    level = st.selectbox(
-      'How would you like to be contacted?',
+      'Level',
       ('Intern', 'Entry Level', 'Intermediate Level', 'Senior Level', ' Manager', 'Senior Manager'))
-   st.write('You selected:', level)
+   #st.write('You selected:', level)
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
