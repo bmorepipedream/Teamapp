@@ -14,6 +14,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 with st.form("my_form"):
    st.write("Inside the form")
    slider_val = st.slider("Form slider")
+   slider2_val = st.slider("Form slider2")
    checkbox_val = st.checkbox("Form checkbox")
 
    # Every form must have a submit button.
