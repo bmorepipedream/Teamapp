@@ -47,6 +47,21 @@ with st.form("my_form"):
       ('AL', 'AK', 'AZ', 'AR', 'CA', 'CZ', 'CO', 'CT', 'DE', 'DC','FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY','LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE','NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR','PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI','VA', 'WA', 'WV', 'WI', 'WY'))
    st.write('You selected:', state)
 
+   age_val= st.text_input(
+      "Please enter your age",
+     "This is a placeholder",
+      key="age",)
+
+   expericence_val = st.text_input(
+      "Years of experience",
+      "This is a placeholder",
+      key="experience",)
+
+   years_val = st.text_input(
+      "Years at company",
+      "This is a placeholder",
+      key="years",)
+
    job_title = st.selectbox(
       'How would you like to be contacted?',
       ('Software Engineer', 'Product Manager', 'Data Scientist', 'Hardware Engineer',
