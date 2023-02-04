@@ -48,7 +48,7 @@ with st.form("my_form"):
    #st.write('You selected:', state)
 
    age_val= st.number_input(
-      "Age", min_value= 18
+      "Age", min_value= 18,
       #"Age",
       key="age",)
 
