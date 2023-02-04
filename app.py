@@ -13,19 +13,59 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 with st.form("my_form"):
    st.write("Inside the form")
-   slider_val = st.slider("Form slider")
-   slider2_val = st.slider("Form slider2")
-   checkbox_val = st.checkbox("Form checkbox")
+   #slider_val = st.slider("Form slider")
+   #slider2_val = st.slider("Form slider2")
+   #checkbox_val = st.checkbox("Form checkbox")
    text_val= st.text_input(
       "Placeholder for the other text input widget",
       "This is a placeholder",
       key="placeholder",
    )
-   ethnicity = st.selectbox(
+   #RACE
+   race = st.selectbox(
+      'How would you like to be contacted?',
+      ('Black', 'Asian', 'White', 'Two or More'))
+   st.write('You selected:',race)
+   #HISPANICE
+   hispanic = st.selectbox(
+      'How would you like to be contacted?',
+      ('Yes', 'No'))
+   st.write('You selected:', hispanic)
+   #GENDER
+   gender= st.selectbox(
       'How would you like to be contacted?',
       ('Email', 'Home phone', 'Mobile phone'))
+   st.write('You selected:', gender)
+   #EDUCATION
+   education = st.selectbox(
+      'How would you like to be contacted?',
+      ('Email', 'Home phone', 'Mobile phone'))
+   st.write('You selected:', education)
+   state = st.selectbox(
+      'How would you like to be contacted?',
+      ('AL', 'AK', 'AZ', 'AR', 'CA', 'CZ', 'CO', 'CT', 'DE', 'DC',
+       'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY',
+       'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE',
+       'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR',
+       'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI',
+       'VA', 'WA', 'WV', 'WI', 'WY'))
+   st.write('You selected:', state)
 
-   st.write('You selected:', ethnicity)
+
+
+
+   job_title = st.selectbox(
+      'How would you like to be contacted?',
+      ('Software Engineer', 'Product Manager', 'Data Scientist', 'Hardware Engineer',
+'Product Designer'))
+   st.write('You selected:', job_title)
+
+   level = st.selectbox(
+      'How would you like to be contacted?',
+      ('Email', 'Home phone', 'Mobile phone'))
+   st.write('You selected:', level)
+
+
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
