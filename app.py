@@ -25,7 +25,7 @@ with st.form("my_form"):
       'How would you like to be contacted?',
       ('Email', 'Home phone', 'Mobile phone'))
 
-   st.write('You selected:', option)
+   st.write('You selected:', ethnicity)
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
