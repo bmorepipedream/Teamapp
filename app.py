@@ -29,6 +29,7 @@ with st.form("my_form"):
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
+
    if submitted:
        st.write("slider", slider_val, "checkbox", checkbox_val, 'text', text_val)
 
