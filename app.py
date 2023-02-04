@@ -25,7 +25,7 @@ with st.form("my_form"):
    race = st.selectbox(
       'How would you like to be contacted?',
       ('Black', 'Asian', 'White', 'Two or More'))
-   st.write('You selected:',race)
+   st.write('You selected:', race)
    #HISPANICE
    hispanic = st.selectbox(
       'How would you like to be contacted?',
@@ -50,9 +50,6 @@ with st.form("my_form"):
        'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI',
        'VA', 'WA', 'WV', 'WI', 'WY'))
    st.write('You selected:', state)
-
-
-
 
    job_title = st.selectbox(
       'How would you like to be contacted?',
