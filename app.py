@@ -41,6 +41,7 @@ with st.form("my_form"):
       'How would you like to be contacted?',
       ('Email', 'Home phone', 'Mobile phone'))
    st.write('You selected:', education)
+
    state = st.selectbox(
       'How would you like to be contacted?',
       ('AL', 'AK', 'AZ', 'AR', 'CA', 'CZ', 'CO', 'CT', 'DE', 'DC',
@@ -54,15 +55,13 @@ with st.form("my_form"):
    job_title = st.selectbox(
       'How would you like to be contacted?',
       ('Software Engineer', 'Product Manager', 'Data Scientist', 'Hardware Engineer',
-'Product Designer'))
+      'Product Designer'))
    st.write('You selected:', job_title)
 
    level = st.selectbox(
       'How would you like to be contacted?',
       ('Email', 'Home phone', 'Mobile phone'))
    st.write('You selected:', level)
-
-
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
