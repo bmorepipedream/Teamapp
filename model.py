@@ -14,3 +14,4 @@ fitted = model.fit()
 
 with open('model.pkl','wb') as f:
   pickle.dump(fitted,f)
+
