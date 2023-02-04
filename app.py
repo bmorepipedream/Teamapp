@@ -52,13 +52,13 @@ with st.form("my_form"):
       #"Age",
       key="age",)
 
-   expericence_val = st.text_input(
-      "Years of experience",
+   expericence_val = st.number_input(
+      "Years of experience", min_value= 0,
       #"Years of xpericence",
       key="experience",)
 
-   years_val = st.text_input(
-      "Years at company",
+   years_val = st.number_input(
+      "Years at company", min_value= 0,
       #"This is a placeholder",
       key="years",)
 
