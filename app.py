@@ -25,36 +25,36 @@ with st.form("my_form"):
    race = st.selectbox(
       'Race',
       ('Black', 'Asian', 'White', 'Two or More'))
-   st.write('You selected:', race)
+   #st.write('You selected:', race)
    #HISPANICE
    hispanic = st.selectbox(
       'Hispanic',
       ('Yes', 'No'))
-   st.write('You selected:', hispanic)
+   #st.write('You selected:', hispanic)
    #GENDER
    gender= st.selectbox(
       'Gender',
       ('Email', 'Home phone', 'Mobile phone'))
-   st.write('You selected:', gender)
+   #st.write('You selected:', gender)
    #EDUCATION
    education = st.selectbox(
       'Education',
       ('Email', 'Home phone', 'Mobile phone'))
-   st.write('You selected:', education)
+   #st.write('You selected:', education)
 
    state = st.selectbox(
       'State',
       ('AL', 'AK', 'AZ', 'AR', 'CA', 'CZ', 'CO', 'CT', 'DE', 'DC','FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY','LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE','NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR','PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI','VA', 'WA', 'WV', 'WI', 'WY'))
-   st.write('You selected:', state)
+   #st.write('You selected:', state)
 
    age_val= st.text_input(
-      "Please enter your age",
-     "This is a placeholder",
+      "Age",
+     "Age",
       key="age",)
 
    expericence_val = st.text_input(
       "Years of experience",
-      "This is a placeholder",
+      #"Years of xpericence",
       key="experience",)
 
    years_val = st.text_input(
@@ -70,7 +70,7 @@ with st.form("my_form"):
 
    level = st.selectbox(
       'How would you like to be contacted?',
-      ('Email', 'Home phone', 'Mobile phone'))
+      ('Intern', 'Entry Level', 'Intermediate Level', 'Senior Level', ' Manager', 'Senior Manager'))
    st.write('You selected:', level)
 
    # Every form must have a submit button.
