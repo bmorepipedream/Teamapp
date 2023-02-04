@@ -23,33 +23,28 @@ with st.form("my_form"):
    #)
    #RACE
    race = st.selectbox(
-      'How would you like to be contacted?',
+      'Race',
       ('Black', 'Asian', 'White', 'Two or More'))
    st.write('You selected:', race)
    #HISPANICE
    hispanic = st.selectbox(
-      'How would you like to be contacted?',
+      'Hispanic',
       ('Yes', 'No'))
    st.write('You selected:', hispanic)
    #GENDER
    gender= st.selectbox(
-      'How would you like to be contacted?',
+      'Gender',
       ('Email', 'Home phone', 'Mobile phone'))
    st.write('You selected:', gender)
    #EDUCATION
    education = st.selectbox(
-      'How would you like to be contacted?',
+      'Education',
       ('Email', 'Home phone', 'Mobile phone'))
    st.write('You selected:', education)
 
    state = st.selectbox(
-      'How would you like to be contacted?',
-      ('AL', 'AK', 'AZ', 'AR', 'CA', 'CZ', 'CO', 'CT', 'DE', 'DC',
-       'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY',
-       'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE',
-       'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR',
-       'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI',
-       'VA', 'WA', 'WV', 'WI', 'WY'))
+      'State',
+      ('AL', 'AK', 'AZ', 'AR', 'CA', 'CZ', 'CO', 'CT', 'DE', 'DC','FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY','LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE','NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR','PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI','VA', 'WA', 'WV', 'WI', 'WY'))
    st.write('You selected:', state)
 
    job_title = st.selectbox(
