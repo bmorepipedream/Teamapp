@@ -77,7 +77,7 @@ with st.form("my_form"):
    submitted = st.form_submit_button("Submit")
 
    if submitted:
-       st.write("slider", slider_val, "checkbox", checkbox_val, 'text', text_val)
+       st.write('race', race, 'hispanic', hispanic,'gender',gender, 'education', education, 'state', state , 'age', age_val )
 
 st.write("Outside the form")
 
