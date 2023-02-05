@@ -3,12 +3,10 @@ import streamlit as st
 import statsmodels.formula.api as smf
 
 """
-# Welcome to Streamlit!
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-In the meantime, below is an example of what you can do with just a few lines of code:
+# Salary Prediction!
+Enter demographic data in the form below to see the predicted salary. For a deeper analysis of the demographic salary information, please see this [dashboard](https://public.tableau.com/views/AnExaminationofFactorsRelatedtoWorkingfromHomefrom2019-2021/Dashboard2?::showVizHome=no&:embed=true).
 """
+
 # Import each Dataset as a DF.
 df = pd.read_csv('stem_final_2.csv')
 # Multivariate Linear Regression formula
@@ -18,11 +16,7 @@ model = smf.ols(formula=f1, data=df)
 # fit Model
 fitted = model.fit()
 
-
-
-
 with st.form("my_form"):
-   st.write("Provide Responses Below")
    #RACE
    race = st.selectbox(
       'Race', ('Black', 'Asian', 'White', 'Two or More'))
@@ -60,12 +54,9 @@ with st.form("my_form"):
       #st.write('race', race, 'hispanic', hispanic,'gender',gender, 'education', education, 'state', state , 'age', age_val )
       demo = {'yearsofexperience': [years_val], 'yearsatcompany': [expericence_val], 'title': [job_title], 'level': [level],
            'education': [education], 'race': [race], 'hispanic': [hispanic], 'gender': [gender], 'state': [state]}
+      pred = fitted.predict(demo)
+      st.write('The predicted salary based on the demographic information you entered below is', round(pred[0], 2))
 
-pred = fitted.predict(demo)
-st.write('The predicted salary based on the demographic information you entered below is', pred[0])
 
-
-title = st.text_input('Movie title', 'Life of Brian')
-st.write('The current movie title is', title)
 
 
