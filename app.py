@@ -1,5 +1,7 @@
 import pandas as pd
 import streamlit as st
+import statsmodels.formula.api as smf
+import pickle
 
 
 
@@ -10,6 +12,17 @@ If you have any questions, checkout our [documentation](https://docs.streamlit.i
 forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
+# Import each Dataset as a DF.
+df = pd.read_csv('stem_final_2.csv')
+# Multivariate Linear Regression formula
+f1 = 'income ~ yearsofexperience + yearsatcompany + title + level + education +  gender + state + race + hispanic'
+# fitted model
+model = smf.ols(formula=f1, data=df)
+# fit Model
+fitted = model.fit()
+
+
+
 
 with st.form("my_form"):
    st.write("Inside the form")
