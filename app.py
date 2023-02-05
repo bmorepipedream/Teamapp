@@ -62,7 +62,8 @@ with st.form("my_form"):
            'education': [education], 'race': [race], 'hispanic': [hispanic], 'gender': [gender], 'state': [state]}
 
 pred = fitted.predict(demo)
-pred
+st.write('The predicted salary based on the demographic information you entered below is', pred[0])
+
 
 title = st.text_input('Movie title', 'Life of Brian')
 st.write('The current movie title is', title)
