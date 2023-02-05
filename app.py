@@ -46,7 +46,7 @@ with st.form("my_form"):
       ('Software Engineer', 'Product Manager', 'Data Scientist', 'Hardware Engineer', 'Product Designer'))
    level = st.selectbox(
       'Level',
-      ('Intern', 'Entry Level', 'Intermediate Level', 'Senior Level', ' Manager', 'Senior Manager'))
+      ('intern', 'entry', 'intermediate', 'senior', ' manager', 'senior manager'))
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
 
