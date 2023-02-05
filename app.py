@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import statsmodels.formula.api as smf
-import pickle
+
 
 
 
