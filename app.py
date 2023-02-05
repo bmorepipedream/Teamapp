@@ -57,9 +57,13 @@ with st.form("my_form"):
    submitted = st.form_submit_button("Submit")
 
    if submitted:
-       st.write('race', race, 'hispanic', hispanic,'gender',gender, 'education', education, 'state', state , 'age', age_val )
+      #st.write('race', race, 'hispanic', hispanic,'gender',gender, 'education', education, 'state', state , 'age', age_val )
+      demo = {'yearsofexperience': [years_val], 'yearsatcompany': [expericence_val], 'title': [job_title], 'level': [level],
+           'education': [education], 'race': [race], 'hispanic': [hispanic], 'gender': [gender], 'state': [state]}
+      pred = fitted.predict(demo)
 
-st.write("Outside the form")
+
+pred
 
 title = st.text_input('Movie title', 'Life of Brian')
 st.write('The current movie title is', title)
